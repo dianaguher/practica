@@ -1,1 +1,43 @@
 esto es una practica de git
+
+ACTUALIZAR GIT DESDE LA TERMINAR
+git update .......................................................................................**si la versión es entre 2.14.2 - 2.16.1**
+git update-git-for-windows .........................................................**para versiones más recientes**
+
+COMANDOS DE CONFIGURACIÓN 
+git config --global user.email "dianagh2598@gmail.com" 	
+git config --global user.name "dianaguher"
+git config --global core.editor "code --wait"...............................la terminal espera hasta que el editor se cierre
+git config --global -e	 ......................................................................abre editor y espera
+git config --global autocrlf (true en win / input en linux).......convierte el comando de salto de linea de win "cr" a mac o linux "lf" y viceversa
+
+COMANDOS DE AYUDA
+git config -h o -help 	.......................................................................muestra los comandos 
+ls .......................................................................................................muestra las carpetas en un directorio
+ls -a....................................................................................................muestra las carpetas y archivos ocultos
+pwd ..................................................................................................muestra el directorio donde me encuentro
+mkdir ...............................................................................................crear nueva carpeta
+
+COMANDOS DE LECTURA
+git status o git status -s .................................................................muestra el estado de los archivos
+git diff ..............................................................................................muestra los cambios en el archivo
+git diff --staged ...............................................................................muestra los cambios en el archivo en stage
+git log --oneline ..............................................................................muestra el historial de commits   / para salir de git log presionar tecla u
+git branch ........................................................................................muestra la rama donde estoy trabajando
+cat (archivo) ....................................................................................muestra el contenido del archivo
+git remote -v ...................................................................................muestra la conexión remota
+
+COMANDOS PRINCIPALES
+git init	 ...............................................................................................inicia repositorio en git
+git add (archivo) .............................................................................agrega archivos al stage
+git commit -m "mi commit" ..........................................................pasa archivos del stage a commit y con -m agrega mensaje
+git rm (archivo) ...............................................................................elimina archivo y se agrega al stage, falta hacer commit
+git restore --staged (archivo) ........................................................saca el archivo del stage
+git mv (archivo origen) (archivo destino) ..................................mover o editar archivo
+git checkout -b (nombre de rama) ...............................................crea una nueva rama o branch
+git checkout (nombre de rama) ...................................................se cambia de rama
+git merge (nombre de rama) ........................................................trae los cambios de la rama indicada y la unifica con la rama actual
+git remote add origin (url) ...........................................................indica de donde consige el código (origin) y dónde subir los cambios (remote origin)
+git push -u origin main ................................................................sube los cambios al repositorio / con -u se crea la rama, origin indica donde crearla y main es el nombre de la rama
+git remote set-url origin (url) ......................................................cambia la url del repositorio
+
